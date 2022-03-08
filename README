@@ -1,0 +1,12 @@
+README
+The docker directory has the code for a basic flask app. The flask app is just something to
+put on a fargate cluster in AWS for fun.
+
+The terraform directory uses the docker image stored in ECR to build the fargate app
+and of course the rest of the infrastructure - vpc, sdm gateway, compute resurce,
+security groups and so on.
+
+This was a fun side project to put together some infrastructure in AWS using terrafrom
+and hook it up to StrongDM. Obviously there are some additional StrongDM configuration
+requirements in the app like setting up resources and managing users and so on.
+
